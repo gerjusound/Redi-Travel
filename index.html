@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redi Travel Car Features</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #b20000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .car-feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car-feature:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .car-feature img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .car-details {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .car-details li {
+      margin: 0.25rem 0;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #b0200e;
+      margin: 0.5rem 0;
+    }
+
+    .book-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #b20000;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(178, 0, 0, 0.3);
+    }
+
+    .book-btn:hover {
+      background-color: #8a0000;
+      box-shadow: 0 5px 12px rgba(138, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Redi Travel Car Features</h1>
+  </header>
+
+  <main>
+    <section class="car-grid">
+
+      <div class="car-feature">
+        <img src="car1.jpg" alt="Mazda 3">
+        <h2>Mazda 3 - 2007</h2>
+        <p>A stylish and reliable car for your adventures.</p>
+        <ul class="car-details">
+          <li>Manual</li>
+          <li>1.6 Diesel</li>
+          <li>5 seats</li>
+          <li>3 suitcases</li>
+        </ul>
+        <p class="price">$35/day</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+
+      <div class="car-feature">
+        <img src="car2.jpg" alt="Opel Corsa">
+        <h2>Opel Corsa - 2007</h2>
+        <p>Fuel efficient and compact – perfect for the city.</p>
+        <ul class="car-details">
+          <li>Manual</li>
+          <li>1.4 Diesel</li>
+          <li>5 seats</li>
+          <li>2 suitcases</li>
+        </ul>
+        <p class="price">$30/day</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+
+      <div class="car-feature">
+        <img src="car3.jpg" alt="Chevrolet Aveo">
+        <h2>Chevrolet Aveo - 2010</h2>
+        <p>Fuel efficient and compact – perfect for the city.</p>
+        <ul class="car-details">
+          <li>Manual</li>
+          <li>1.2 Petrol</li>
+          <li>5 seats</li>
+          <li>2 suitcases</li>
+        </ul>
+        <p class="price">$30/day</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+
+      <div class="car-feature">
+        <img src="car4.jpg" alt="Ford Focus">
+        <h2>Ford Focus - 2009</h2>
+        <p>Family Car, comfort, and built for everyday driving.</p>
+        <ul class="car-details">
+          <li>Manual</li>
+          <li>1.6 Diesel</li>
+          <li>5 seats</li>
+          <li>3–4 suitcases</li>
+        </ul>
+        <p class="price">$38/day</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
