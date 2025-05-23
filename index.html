@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Redi Travel Car Features</title>
+  <title>Redi Travel Car Rental </title>
   <style>
     body {
       margin: 0;
@@ -70,23 +70,30 @@
 
     .book-btn {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
+      margin: 0.5rem 0.25rem 0;
+      padding: 0.6rem 1.2rem;
       background-color: #b20000;
       color: white;
       text-decoration: none;
       border-radius: 6px;
       transition: background-color 0.3s, box-shadow 0.3s;
       cursor: pointer;
-      box-shadow: 0 3px 6px rgba(178, 0, 0, 0.3);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
 
     .book-btn:hover {
       background-color: #8a0000;
-      box-shadow: 0 5px 12px rgba(138, 0, 0, 0.5);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     }
 
-    /* Modal Form */
+    .book-btn.whatsapp {
+      background-color: #25D366;
+    }
+
+    .book-btn.whatsapp:hover {
+      background-color: #1DA851;
+    }
+
     #booking-form {
       display: none;
       position: fixed;
@@ -129,7 +136,6 @@
       font-family: inherit;
     }
 
-    /* Responsive modal tweaks */
     @media (max-width: 600px) {
       #booking-form .modal-content {
         padding: 1rem;
@@ -147,128 +153,134 @@
   <main>
     <section class="car-grid">
 
+      <!-- Repeat for each car -->
       <div class="car-feature">
         <img src="car1.jpg" alt="Mazda 3">
         <h2>Mazda 3 - 2007</h2>
         <p>A stylish and reliable car for your adventures.</p>
         <ul class="car-details">
-          <li>Manual</li>
-          <li>1.6 Diesel</li>
-          <li>5 seats</li>
-          <li>3 suitcases</li>
+          <li>Manual</li><li>1.6 Diesel</li><li>5 seats</li><li>3 suitcases</li>
         </ul>
         <p class="price">€35/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Mazda%203%20-%202007" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
 
+      <!-- Opel Corsa -->
       <div class="car-feature">
         <img src="car2.jpg" alt="Opel Corsa">
         <h2>Opel Corsa - 2007</h2>
         <p>Fuel efficient and compact – perfect for the city.</p>
         <ul class="car-details">
-          <li>Manual</li>
-          <li>1.4 Diesel</li>
-          <li>5 seats</li>
-          <li>2 suitcases</li>
+          <li>Manual</li><li>1.4 Diesel</li><li>5 seats</li><li>2 suitcases</li>
         </ul>
         <p class="price">€30/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Opel%20Corsa%20-%202007" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
 
+      <!-- Chevrolet Aveo -->
       <div class="car-feature">
         <img src="car3.jpg" alt="Chevrolet Aveo">
         <h2>Chevrolet Aveo - 2010</h2>
         <p>Fuel efficient and compact – perfect for the city.</p>
         <ul class="car-details">
-          <li>Manual</li>
-          <li>1.2 Petrol</li>
-          <li>5 seats</li>
-          <li>2 suitcases</li>
+          <li>Manual</li><li>1.2 Petrol</li><li>5 seats</li><li>2 suitcases</li>
         </ul>
         <p class="price">€30/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Chevrolet%20Aveo%20-%202010" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
 
+      <!-- Ford Focus -->
       <div class="car-feature">
         <img src="car4.jpg" alt="Ford Focus">
         <h2>Ford Focus - 2009</h2>
         <p>Family Car, comfort, and built for everyday driving.</p>
         <ul class="car-details">
-          <li>Manual</li>
-          <li>1.6 Diesel</li>
-          <li>5 seats</li>
-          <li>3–4 suitcases</li>
+          <li>Manual</li><li>1.6 Diesel</li><li>5 seats</li><li>3–4 suitcases</li>
         </ul>
         <p class="price">€38/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Ford%20Focus%20-%202009" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
-<div class="car-feature">
+
+      <!-- Toyota Yaris -->
+      <div class="car-feature">
         <img src="car5.jpeg" alt="Toyota Yaris">
         <h2>Toyota Yaris - 2006</h2>
         <p>Compact Car, comfort, automatic and so enjoyable.</p>
         <ul class="car-details">
-          <li>Automatic</li>
-          <li>1.4 Petrol</li>
-          <li>5 seats</li>
-          <li>2 suitcases</li>
+          <li>Automatic</li><li>1.4 Petrol</li><li>5 seats</li><li>2 suitcases</li>
         </ul>
         <p class="price">€30/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Toyota%20Yaris%20-%202006" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
+
+      <!-- Mercedes Benz V Class -->
       <div class="car-feature">
-        <img src="car6.jpg" alt="Mercedes Benz V class">
+        <img src="car6.jpg" alt="Mercedes Benz V Class">
         <h2>Mercedes Benz V Class - 2010</h2>
-        <p>Your Perfect Companion for long trips with Frends</p>
+        <p>Your Perfect Companion for long trips with Friends</p>
         <ul class="car-details">
-          <li>Automatic</li>
-          <li>2.2 Diesel</li>
-          <li>8+1 seats</li>
-          <li>4 suitcases</li>
+          <li>Automatic</li><li>2.2 Diesel</li><li>8+1 seats</li><li>4 suitcases</li>
         </ul>
         <p class="price">€100/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Mercedes%20Benz%20V%20Class%20-%202010" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
-       <div class="car-feature">
-        <img src="car7.jpg" alt="Mercedes Benz A class">
+
+      <!-- Mercedes Benz A Class -->
+      <div class="car-feature">
+        <img src="car7.jpg" alt="Mercedes Benz A Class">
         <h2>Mercedes Benz A Class - 2014</h2>
-        <p>Your comodity, confort and efficiency are the main focus of this car</p>
+        <p>Your comfort and efficiency are the main focus of this car.</p>
         <ul class="car-details">
-          <li>Automatic</li>
-          <li>1.8 Diesel</li>
-          <li>5 seats</li>
-          <li>2 suitcases</li>
+          <li>Automatic</li><li>1.8 Diesel</li><li>5 seats</li><li>2 suitcases</li>
         </ul>
         <p class="price">€60/day</p>
-        <a href="javascript:void(0)" class="book-btn">Book Now</a>
+        <div>
+          <a href="https://wa.me/355699494373?text=Hi%2C%20I'm%20interested%20in%20booking%20the%20Mercedes%20Benz%20A%20Class%20-%202014" target="_blank" class="book-btn whatsapp">📱 WhatsApp</a>
+          <a href="javascript:void(0)" class="book-btn">Book via Email</a>
+        </div>
       </div>
+
     </section>
   </main>
 
-  <!-- Booking Form Modal -->
+  <!-- Booking Modal (Same as before) -->
   <div id="booking-form" role="dialog" aria-modal="true" aria-labelledby="booking-title">
     <div class="modal-content">
       <button class="close-btn" aria-label="Close booking form">✖</button>
       <h2 id="booking-title">Book This Car</h2>
       <form action="https://formspree.io/f/mbloewav" method="POST">
         <input type="hidden" name="car" id="carName" />
-        <label>
-          Your Name:
+        <label>Your Name:
           <input type="text" name="name" required autocomplete="name" />
         </label>
-        <label>
-          Email:
+        <label>Email:
           <input type="email" name="email" required autocomplete="email" />
         </label>
-        <label>
-          Pickup Date:
+        <label>Pickup Date:
           <input type="date" name="pickup_date" required />
         </label>
-        <label>
-          Return Date:
+        <label>Return Date:
           <input type="date" name="return_date" required />
         </label>
-        <label>
-          Message:
+        <label>Message:
           <textarea name="message" rows="3"></textarea>
         </label>
         <button type="submit" class="book-btn">Send Booking Request</button>
@@ -280,7 +292,7 @@
     const bookingForm = document.getElementById('booking-form');
     const carNameInput = document.getElementById('carName');
 
-    document.querySelectorAll('.book-btn').forEach(button => {
+    document.querySelectorAll('.book-btn:not(.whatsapp)').forEach(button => {
       button.addEventListener('click', function(event) {
         event.preventDefault();
         const carName = this.closest('.car-feature').querySelector('h2').innerText;
@@ -289,19 +301,16 @@
       });
     });
 
-    // Close modal on close button click
     document.querySelector('#booking-form .close-btn').addEventListener('click', () => {
       bookingForm.style.display = 'none';
     });
 
-    // Close modal when clicking outside modal content
     bookingForm.addEventListener('click', (e) => {
       if (e.target === bookingForm) {
         bookingForm.style.display = 'none';
       }
     });
 
-    // Close modal with ESC key
     document.addEventListener('keydown', (e) => {
       if (e.key === "Escape" && bookingForm.style.display === 'flex') {
         bookingForm.style.display = 'none';
